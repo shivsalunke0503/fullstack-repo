@@ -1,0 +1,32 @@
+.pagewrapper{
+    
+    height:700px;
+    background-image:url("wall.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+   padding:1px;
+   /* float:left; */
+}
+.scene{
+    /* padding:1px; */
+    height:300px;
+    width:300px;
+    /* margin-top:10px; */
+    background-image:url("scene.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+    /* float:left; */
+    
+    /* position:absolute; */
+    
+ }
+ .window{
+    /* position:absolute; */
+    height:300px;
+    width:300px;
+    /* margin:auto; */
+    border:10px groove #000;
+    margin-left:450px;
+    margin-top:-300px;
+ }
