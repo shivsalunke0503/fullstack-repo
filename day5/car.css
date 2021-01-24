@@ -1,0 +1,51 @@
+.pagewrapper{
+    /* background-color:#000; */
+    height:500px;
+    padding:10px;
+}
+.car{
+    height:300px;
+    /* margin:auto; */
+    width:500px;
+    /* background-color:#ff0; */
+    background-image:url(images/car1.png);
+    background-size:100% 100%;
+    /* background-size:cover; */
+    background-repeat: no-repeat;
+    padding:1px;
+    animation-name:carmotion;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* animation-duration:ease-out; */
+    animation-timing-function: linear;
+    
+
+}
+.backwheel, .frontwheel{
+    height: 80px;
+    /* background-color: red; */
+    width: 80px;
+    margin-top: 186px;
+    background-image: url(images/whl.png);
+    background-size: 100% 100%;
+    margin-left: 76px;
+    float: left;
+    animation-name: wheelmotion;
+    animation-duration: 2s;
+    /* animation:ease-out; */
+    animation-timing-function:linear;
+}
+.frontwheel{
+    margin-left: 219px;
+    margin-top:180px;
+}
+
+@keyframes wheelmotion{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@keyframes carmotion{
+    from{margin-left:0px;}
+    to{margin-left:750px}
+}
