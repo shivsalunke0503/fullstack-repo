@@ -1,0 +1,2 @@
+to add router:
+npm install react-router-dom --save

@@ -1,0 +1,18 @@
+.formbtn{
+    margin-top:50px !important;
+}
+.formRow{
+    margin-top:10px;
+}
+label{
+    font-weight : normal;
+}
+  form{  /* background-color: #ff0; */
+    width: 95%;
+    height: 430px;
+    margin-top: 49px;
+    border: 1px solid #000;
+    margin: auto;
+    box-shadow: 1px 5px #ff0;
+    background-color: white
+  }
