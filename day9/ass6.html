@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ass6.css">
+
+<script type="text/javascript">
+
+function addTable(args){
+		var elem = document.getElementById("tablediv");
+		var tableHead  = "<table>" ;
+												// "<thead>" +
+												// 	"<th> Sr# </th>"+
+												// 	"<th> EmpID </th>"+
+												// 	"<th> EmpName </th>"+
+												// 	"<th> Mobile </th>"+
+												// 	"<th> Email </th>"+
+												// 	"<th> City </th>"+
+												// "</thead>";
+
+		var tableBody1 = "<tbody>" ;
+		var tableBody2 = "</tbody>";
+
+		var tableRow = "";
+
+    switch(args){
+    case("1to10"):
+        for(var i=1; i<=10; i++){
+				tableRow = tableRow + "<tr>";
+				for(var j=1; j<=10; j++){
+					var value = i*j;
+					tableRow = tableRow + "<td>" + value + "</td>";
+				}
+				tableRow = tableRow + "</tr>";
+				// console.log("tableRow = ", tableRow);
+        }
+        break;
+    case ("11to20"):
+        for(var i=1; i<=10; i++){
+				tableRow = tableRow + "<tr>";
+				for(var j=11; j<=20; j++){
+					var value = i*j;
+					tableRow = tableRow + "<td>" + value + "</td>";
+				}
+				tableRow = tableRow + "</tr>";
+				// console.log("tableRow = ", tableRow);
+        }
+        break;
+        case ("21to30"):
+        for(var i=1; i<=10; i++){
+				tableRow = tableRow + "<tr>";
+				for(var j=21; j<=30; j++){
+					var value = i*j;
+					tableRow = tableRow + "<td>" + value + "</td>";
+				}
+				tableRow = tableRow + "</tr>";
+				// console.log("tableRow = ", tableRow);
+        }
+        break;
+
+    }
+	var tableBody = tableBody1 + tableRow + tableBody2;
+
+		var tableEnd  =	 "</table>" ;
+
+		elem.innerHTML = tableHead + tableBody + tableEnd;
+    
+}
+</script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <h1>Assignment - 6</h1>
+        <div class="button"><button class="b1" onclick="addTable('1to10')">1to10</button></div>
+        <div class="button"><button class="b1" onclick="addTable('11to20')">11 to 20</button></div>
+        <div class="button"><button class="b1" onclick="addTable('21to30')">21 to 30</button></div>
+        <div class="table" id="tablediv"></div>
+    </div>
+</body>
+</html>

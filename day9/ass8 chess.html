@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ass8.css">
+
+<script type="text/javascript">
+var rowcount=0;
+function addTable(){
+        var elem = document.getElementById("tablediv");
+        var tailhead="<thead>" +
+                            "<th></th>"+
+                            "<th>a</th>"+
+                            "<th>b</th>"+
+                            "<th>c</th>"+
+                            "<th>d</th>"+
+                            "<th>e</th>"+
+                            "<th>f</th>"+
+                            "<th>g</th>"+
+                            "<th>h</th>"+ 
+                            "<th></th>"+ 
+                            "</thead>";
+
+		var tableHead  = "<table id=\"newtable\">"+
+                        "<thead>" +
+                            "<th></th>"+
+                            "<th>a</th>"+
+                            "<th>b</th>"+
+                            "<th>c</th>"+
+                            "<th>d</th>"+
+                            "<th>e</th>"+
+                            "<th>f</th>"+
+                            "<th>g</th>"+
+                            "<th>h</th>"+
+                            "<th></th>"+  
+                            "</thead>";
+
+	    var tableBody1 = "<tbody>" ;
+		var tableBody2 = "</tbody>";
+        var tableRow = "";
+        var value;
+        var classtoggle=["white","black","white","black","white","black","white","black"];
+        var classtoggle1=["black","white","black","white","black","white","black","white"];
+       var borderclass="borderclass";
+       var blackpieces=["elephantblack.png","horseblack.png","camelblack.png","kingblack.png","queenblack.png","camelblack.png","horseblack.png","elephantblack.png"];
+       var pyadablack="pyadablack.png";
+       var whitepieces=["elephantwhite.png","horsewhite.png","camelwhite.png","kingwhite.png","queenwhite.png","camelwhite.png","horsewhite.png","elephantwhite.png"];
+       var pyadawhite="pyadawhite.png"; 
+       var classattr="";
+       var backgroundImage="";
+       var cellcount=0;
+for(var i=0; i<=7; i++){
+            
+            tableRow = tableRow + "<tr>";
+	for(var j=0; j<=9; j++){
+                cellcount=cellcount+1;
+                console.log(cellcount);
+                // if(i%2==0){ 
+                if(i==1||i==3||i==5||i==7){
+                    classattr=classtoggle[j-1];
+                }
+                else{
+                    classattr=classtoggle1[j-1];
+                }    
+                if((j==9)||(j==0)){tableRow = tableRow + "<td class="+borderclass+">"+(8-i)+"</td>";}
+                else{
+                        if(cellcount>1 && cellcount<10){
+                        // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+blackpieces[j-1]+");perspective:10000px;transform:rotateX(-40deg)>"+"</td>";
+                      //remove comment of below line to make the first row without perspective
+                        tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+blackpieces[j-1]+")"+">"+"</td>";
+                    }
+                    else if(cellcount>11 && cellcount<20){
+                        tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+pyadablack+")"+">"+"</td>";
+                        // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+">"+"<img src=\"images/pyadablack.png\""+">"+"</td>";
+                        // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+pyadablack+");perspective:10000px;transform:rotateX(-30deg)>"+"</td>";
+                    }
+                    else if(cellcount>71&&cellcount<80){
+                        // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+blackpieces[j-1]+");perspective:10000px;transform:rotateX(-30deg)>"+"</td>";
+                        tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+whitepieces[j-1]+")"+">"+"</td>";
+                    }
+                    else if(cellcount>61&&cellcount<70)
+                    tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+pyadawhite+")"+">"+"</td>";
+                    // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+">"+"<img src=\"images/pyadawhite.png\""+">"+"</td>";
+                    // tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+" "+"style="+"background-image:url(images/"+pyadablack+");perspective:10000px;transform:rotateX(-50deg)>"+"</td>";
+                    else
+                    {
+                        tableRow = tableRow + "<td class="+classattr+" "+"id="+cellcount+">"+cellcount+"</td>";
+                    }
+                }  
+            }
+                tableRow = tableRow +"</tr>";
+        }
+	var tableBody = tableBody1 + tableRow+tableBody2;
+
+		var tableEnd  =	 "</table>" ;
+
+		elem.innerHTML = tableHead + tableBody + tailhead+tableEnd;
+
+}
+
+</script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <h1>Assignment - 8 Day 9</h1>
+        <div class="button"><button class="b1" onclick="addTable()">Click me</button></div>
+        <div class="table" id="tablediv" ></div>
+        </div>
+</body>
+</html>

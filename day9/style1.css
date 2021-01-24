@@ -1,0 +1,26 @@
+.pagewrapper{
+    background-color:#ff0;
+    width:80%;
+    height:600px;
+    padding:10px;
+    margin:auto;
+}
+.button{
+    margin:auto;
+    }
+.button .b1{
+    height:100px;
+    width:150px;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    }
+
+.result{
+    height:100px;
+    width:50%;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    margin:auto;  
+}

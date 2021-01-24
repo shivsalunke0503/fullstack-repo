@@ -1,0 +1,36 @@
+.pagewrapper{
+    background-color:#ff0;
+    width:80%;
+    height:600px;
+    padding:10px;
+    margin:auto;
+}
+.button{
+    margin:auto;
+    }
+.button .b1{
+    height:100px;
+    width:auto;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    }
+
+.table{
+    height:600px;
+    width:50%;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    margin:auto;
+     
+}
+table th,table td{
+    border:1px solid #000;
+    padding:10px;
+    height:30px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}

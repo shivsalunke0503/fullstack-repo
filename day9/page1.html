@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+
+<script type="text/javascript">
+function changeAge(){
+var element=document.getElementById("myage");
+element.innerHTML = parseInt(element.innerHTML)+1;
+var element2=document.getElementById("sisage");
+element2.innerHTML = parseInt(element2.innerHTML)+1;
+}
+</script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <div class="button"><button class="b1" onclick="changeAge()">Age</button></div>
+        <div class="result">My age is <span id ="myage">25</span> yrs and Sisters age is <span id ="sisage">20</span> yrs</div>
+    </div>
+</body>
+</html>

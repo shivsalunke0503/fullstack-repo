@@ -1,0 +1,127 @@
+.pagewrapper{
+    background-color:#ff0;
+    width:80%;
+    height:900px;
+    padding:10px;
+    margin:auto;
+    perspective: 1000px;
+}
+.button{
+    margin:auto;
+    }
+.button .b1{
+    height:100px;
+    width:auto;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    }
+
+.table{
+    height:800px;
+    width:800px;
+    color:red;
+    /* font-weight: bold; */
+    /* font-size:auto; */
+    margin:auto;
+     
+}
+table th,td{
+    border:1px solid #000;
+    padding:10px;
+    width:50px;
+    height:50px;
+    /* height:30px; */
+    text-align: center;
+    /* //added for  */
+    /* transform: rotateX(-30deg);
+    /* perspective: 1000px;  */
+
+}
+td{
+/* line-height: 25px; */
+background-size:100% 100%;
+perspective: 1000px;
+/* vertical-align:middle; */
+background-color:black;
+}
+td:hover{
+    /* /* box-shadow:0px 0px 50px 50px blue; */
+    box-shadow:0px 0px 100px 100px white;
+    cursor:pointer;
+    border:10px solid red;
+    color:black;
+
+}
+table{
+    border-collapse: collapse;
+    height:100%;
+    width:100%;
+padding:1px;
+
+/* background-image:url(images/ball.png);  */
+
+
+}
+.white{
+    background-color:#fff;
+}
+.border{
+    background-color:red;
+
+}
+.black{
+    background-color:rgb(106, 106, 104);
+}
+.borderclass,table th{
+background-color:skyblue;
+border:0px;
+width:10px; 
+font-size:25px;
+font-weight:bold;
+
+}
+#tablediv{
+    margin-top:-100px;
+    height:800px;
+    width:800px;
+    /* position: absolute; */
+    animation-name: chessboardanimation;
+    animation-duration: 5s;
+    transform: rotateX(40deg);
+    perspective: 1000px;
+    /* background-color:skyblue; */
+    
+}
+/* .borderclass{
+    width:10px;
+    /* border:1px solid #000; */
+    /* padding:0px; */
+/* } */ 
+/* .#2{
+    background-image: url("images/camelblack.png");
+} */
+.white #2{
+    background-image: url("images/camelblack.png");
+}
+/* .white #2{
+    background-image: url("images/camelblack.png");
+} */
+
+
+img{
+    /* padding:10px; */
+    transform: rotateY(-70deg);
+    /* transform:scale3d(1000px);   */
+    /* width: 150%; */
+    /* transform:scale(); */
+    /* height:auto; */
+}
+/* img:hover{
+    box-shadow: red 1;
+} */
+    @keyframes chessboardanimation{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg);transition:15s;}
+
+}

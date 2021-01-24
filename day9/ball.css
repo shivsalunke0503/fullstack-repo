@@ -1,0 +1,42 @@
+.pagewrapper{
+    background-color:#ff0;
+    width:80%;
+    height:700px;
+    margin:auto;
+}
+.ball{
+    /* background-color:red; */
+    height:100px;
+    width:100px;
+    background-image: url("images/Swimming-Pool-Ball-Transparent-PNG.png");
+    background-size:100% 100%;
+    animation-name: ballrotation;
+    animation-duration:10s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    /* transition-duration: 15s; */
+
+}
+@keyframes ballrotation{
+    
+    0% {left:400px;top:10px;}
+    10%{left:400px;top:600px;}
+    15%{left:500px; top:50px;}
+    20%{left:600px;top:600px;}
+    25%{left:700px;top:100px;}
+    30%{left:800px; top:600px;}
+    40%{left:900px;top:200px;}
+    50%{left:1000px;top:600px;}
+    60%{left:1100px;top:300px;}
+    70%{left:1200px;top:600px;}
+    80%{left:1300px;top:500px;} 
+    90%{left:1400px;top:600px;}
+    95%{left:1500px;top:550px;}
+    96%{left:1510px;top:560px;}
+    97%{left:1520px;top:570px;}
+    98%{left:1530px;top:580px;}
+    99%{left:1550px;top:590px;}
+    100%{left:1590px;top:600px;transform:rotate(560deg);}
+    }
+    

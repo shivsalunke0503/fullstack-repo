@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+<script type="text/javascript">
+
+var rowcount=2;
+    function addrow(){
+        var table=document.getElementById("mytable");
+        var tablerow="<tr>";
+            for(var i=1;i<=6;i++){
+                if(i==1){
+                tablerow=tablerow+"<td>"+ rowcount +"</td>"; 
+                }
+                else{
+                    tablerow=tablerow+"<td></td>";
+                }
+            }
+                tablerow=tablerow+"</tr>";
+                table.innerHTML=table.innerHTML+tablerow;
+                rowcount=rowcount+1;
+    }
+
+    function addTable(){
+        rowcount=2;
+        var element=document.getElementById("table");
+        var tablehead="<table id=\"mytable\"><thead>";
+        tablehead=tablehead+
+            "<th>#Srno</th>"+
+            "<th>EmpID</th>"+
+            "<th>EmpName</th>"+
+            "<th>Mobile</th>"+
+            "<th>Email</th>"+
+            "<th>City</th>";
+    
+    var headend="</thead>";
+    var tablebody="<tbody>";
+    
+        var tablerow="<tr>";
+            for(var i=1;i<=6;i++){
+               if(i==1){
+                tablerow=tablerow+"<td>"+i+"</td>"; }
+                else{
+                    tablerow=tablerow+"<td></td>";
+                }
+            }
+                tablerow=tablerow+"</tr>";
+
+            var bodyend="</tbody>";
+            var tableend="</table>";
+            var table = tablehead+headend+tablebody+tablerow+bodyend+tableend;
+            element.innerHTML=table;
+}
+</script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <div class="button"><button class="b1" onclick="addTable()">Table</button></div>
+        <div class="button"><button class="b1" onclick="addrow()">Row</button></div>
+        <div class="table" id="table"></div>
+    </div>
+</body>
+</html>
