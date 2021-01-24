@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallex</title>
+    
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="fontawesome/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="page2.css">
+<script type="text/javascript">
+
+$(document).ready(function(){
+$(window).scroll(function(){
+    // here this = window
+var winheight = $(this).height();
+var scrollTop = $(this).scrollTop();
+// console.log("height="+winheight,"scrollTop"+scrollTop);
+
+
+  $(".imageRow").each(function(){
+    var imgrowtop = $(this).position().top;
+    console.log("imgrowtop = "+imgrowtop);
+    rowscrolltop = imgrowtop - scrollTop;
+    if(rowscrolltop < winheight * 0.75){
+      $(this).children().children(".commonClass").addClass("imgAnim");
+    }
+  }); 
+
+
+
+});
+        
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12 banner">
+shankar
+                  </div>                 
+                </div>
+                <div class="row">
+                        <div class="col-lg-12 imageRow">
+                        
+                                <div class="col-lg-3 ">
+                                    <div class="img1 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project1</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class="img2 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project2</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img3 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project3</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img4 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project4</div>
+                                    </div>
+                                </div>
+                           
+                        
+                        </div>                 
+              </div>
+                <div class="row">
+                        <div class="col-lg-12 imageRow">
+                        
+                                <div class="col-lg-3 ">
+                                    <div class=" img1 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project1</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img2 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project2</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img3 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project3</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img4 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project4</div>
+                                    </div>
+                                </div>
+                           
+                        
+                        </div>                 
+              </div>
+                <div class="row">
+                        <div class="col-lg-12 imageRow">
+                        
+                                <div class="col-lg-3 ">
+                                    <div class=" img1 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project1</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img2 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project2</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img3 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project3</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class=" img4 commonClass">
+                                        <div class="projectName col-lg-6 col-lg-offset-3">Project4</div>
+                                    </div>
+                                </div>
+                           
+                        
+                        </div>                 
+              </div>
+                </div>
+                
+</body>
+</html>

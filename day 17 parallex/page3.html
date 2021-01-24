@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallex</title>
+    
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="fontawesome/fontawesome/js/all.min.js"></script>
+    <!-- <script type="text/javascript" src="page3.js"></script> -->
+    <link rel="stylesheet" href="fontawesome/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="page3.css">
+
+
+<script>
+        $(document).ready(function(){
+            var b1Top = $(".b1").position().top;
+            var b2Top = $(".b2").position().top;
+            var b3Top = $(".b3").position().top;
+            var b4Top = $(".b4").position().top;
+            $(window).scroll(function(){
+                var scroll = $(this).scrollTop();
+                console.log(scroll);
+                console.log(b1Top);
+                $(".b1").css({top:b1Top-(scroll*0.95)})
+
+            });
+
+
+
+
+
+
+
+
+});
+
+
+</script>
+
+
+
+
+</head>
+<body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="baloonscene col-lg-12">
+                    <img src="images/baloon1.png" class="baloon b1">
+                    <img src="images/baloon2.png" class="baloon b2">
+                    <img src="images/baloon3.png" class="baloon b3">
+                    <img src="images/baloon4.png" class="baloon b4">
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+
+
+
+
+</html>

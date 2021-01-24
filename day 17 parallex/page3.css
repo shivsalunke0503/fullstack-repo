@@ -1,0 +1,27 @@
+body{
+    background-color:#ff0;
+}
+
+.baloonscene{
+    height:2000px;
+    background-image: url(images/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.baloon{
+    width:300px;
+    top:1500px;
+    position:absolute;
+}
+.b1{
+left:10px;
+}
+.b2{
+    left:300px;
+    }
+.b3{
+    left:600px;
+    }
+.b4{
+    left:900px;
+    }
