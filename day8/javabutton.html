@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="javabutton.css">
+<script src="javascript.js"></script>
+<!-- <script type="text/javascript">
+var widthpress=false;
+var heightpress=false;
+var circlepress=false;
+var bgcolorpress=false;
+var borderpress=false;
+var bgimGEpress=false;
+    
+function changeWidth(){
+    if(widthpress==true){
+        document.getElementById("box").style.width="200px";
+        widthpress=false;
+    }
+    else{
+        document.getElementById("box").style.width="400px";
+        widthpress=true;
+    }
+}
+
+function changeHeight(){
+    if(heightpress==true){
+        document.getElementById("box").style.height="200px";
+        heightpress=false;
+    }
+    else{
+        document.getElementById("box").style.height="400px";
+        heightpress=true;
+    }
+}
+function makeCircle(){
+    if(circlepress==true){
+        document.getElementById("box").style.borderRadius="";
+        document.getElementById("circle").innerText="circle";
+        circlepress=false; 
+    }
+    else{
+        document.getElementById("box").style.borderRadius="100%";
+        document.getElementById("circle").innerText="square";
+        circlepress=true;
+    }
+}
+
+function changebgColor(){
+    if(bgcolorpress==true){
+        document.getElementById("box").style.backgroundColor="#000";
+        bgcolorpress=false;
+    }
+    else{
+        if(bgimGEpress==false){
+        document.getElementById("box").style.backgroundImage="none";
+        document.getElementById("box").style.backgroundColor="red";
+        bgcolorpress=true;
+        }
+    }
+}
+
+function changeBorder(){
+    if(borderpress==true){
+        document.getElementById("box").style.border="";
+        borderpress=false;
+    }else{
+        document.getElementById("box").style.border="10px solid #f2f";
+        borderpress=true;
+    }
+}
+function changebgi(){
+    if (bgimGEpress==true){
+        document.getElementById("box").style.backgroundImage="url('images/pic.jpg')";
+        bgimGEpress=false;
+    }
+    else{
+        document.getElementById("box").style.backgroundImage="url('images/pic.jpg')";
+        bgimGEpress=true;
+    }
+}
+
+
+</script> -->
+</head>
+<body>
+    <div class="pagewrapper" lg>
+        <nav>
+            <ul>
+                <li onclick="changeWidth()">width</li>
+                <li onclick="changeHeight()" id="ht">height</li>
+                <li onclick="makeCircle()" id="circle">circle</li>
+                <li onclick="changebgColor()">bgcolor</li>
+                <li onclick="changeBorder()">border</li>
+                <li onclick="changebgi()">bgimage</li>
+            </ul>
+        </nav>
+        <div class="box" id="box"></div>
+    </div>
+   <center><div>user name:<input type="text" class="uname" id="text1"> <br>
+    <button class="button" onclick="showtext()"> click me</button>
+    </div>
+</center>
+</body>
+</html>

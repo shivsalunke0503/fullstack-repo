@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="singlefunction.css">
+<script type="text/javascript">
+function changeProperty(property,propval){
+    var element=document.getElementById("box");
+if(property=="background-image"){
+    element.style.backgroundSize ="100% 100%";
+   element.style.backgroundRepeat="no-repeat";
+    
+}
+document.getElementById("box").style.setProperty(property,propval);
+}
+
+</script>
+</head>
+<body>
+    <div class="pagewrapper">
+        <nav>
+            <ul>
+                <li onclick="changeProperty('width','800px')">width</li>
+                <li onclick="changeProperty('height','800px')">height</li>
+                <li onclick="changeProperty('border-radius','100%')" id="circle">circle</li>
+                <li onclick="changeProperty('background-color','red')">bgcolor</li>
+                <li onclick="changeProperty('border','10px solid #0f0')">border</li>
+                <li onclick="changeProperty('background-image','url(\'images/pic.jpg\')')">bgimage</li>
+            </ul>
+        </nav>
+        <div class="box" id="box"></div>
+    </div>
+    
+</body>
+</html>
