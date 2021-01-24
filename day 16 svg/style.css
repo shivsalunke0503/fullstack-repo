@@ -1,0 +1,18 @@
+body{
+    background-color: blue;
+}
+.pageWrapper{
+ width:1000px;
+ background-color:#ff0; 
+ height:20000px;
+ margin:auto;  
+ padding:10px;
+}
+.svgArea{
+    margin-bottom: 10px;
+    padding:50px;
+    width:600px;
+    height:600px;
+    background-color: #ccc;
+    margin:auto;
+}

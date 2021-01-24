@@ -1,0 +1,55 @@
+body{
+background-color:   #000;
+}
+.pageWrapper{
+    width:1000px;
+    background-color:#ff0; 
+    height:20000px;
+    margin:auto;  
+    padding:10px;
+   }
+.svgArea{
+    
+    /* padding:50px; */
+    width:400px;
+    height:400px;
+    background-color: #ccc;
+    /* margin:auto; */
+    margin-bottom: 10px;
+}
+.fish{
+    /* stroke: rgba(0,0,0,0); */
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: drawFish;
+    animation-fill-mode:forwards;
+/* stroke:1px solid #000; */
+    animation-duration: 5s;
+}
+@keyframes drawFish{
+   to{
+    stroke-dashoffset:0;
+   }
+}
+
+.sbilogo{
+    /* stroke: rgba(0,0,0,0); */
+    /* change this value to see the effect */
+    stroke-dasharray: 100;
+
+    stroke-dashoffset: 1000;
+    animation-name: drawFish;
+    animation-fill-mode:forwards;
+/* stroke:1px solid #000; */
+    /* animation-duration: 5s; */
+    animation-duration: 10s;
+}
+.googlelogo{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-name: drawFish;
+    animation-fill-mode:forwards;
+/* stroke:1px solid #000; */
+    /* animation-duration: 5s; */
+    animation-duration: 10s;
+}

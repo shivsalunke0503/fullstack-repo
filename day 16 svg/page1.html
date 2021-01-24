@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="pageWrapper">
+     <div class="container-fluid">
+         <div class="svgArea">
+             <div>
+                 <h1>Rectangle & Circle SBI logo</h1>
+                 <svg width="600" height="400">
+                        <!-- <circle cx="10" cy="10" r="2" stroke="green" stroke-width="0" fill="yellow" /> -->
+                    <circle cx="300" cy="200" r="100" stroke="green" stroke-width="150" fill="#fff" />
+                    <rect x="291" y="218" class="rectangle"width="20" height="158" style="fill:#fff;stroke-width:0;stroke:rgb(0,0,0)" />
+                 </svg>
+                 
+             </div>
+         </div>
+         <div>
+         <div class="svgArea">
+                <div>
+                        <h1>Polygon</h1>
+                  <svg width="600" height="400">
+                        <polygon points="250,10 100,400 400,150 100,150  400,400 "
+                        style="fill:#f00;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+                  </svg> 
+                  <svg height="150" width="500">
+                        <ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+                        <ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+                        <ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+                        <ellipse cx="200" cy="30" rx="100" ry="10" style="fill:red" />
+                      </svg>
+                </div>
+            </div>
+            <div class="svgArea">
+                    <svg width="600" height="400">
+                           
+                <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                              <stop offset="50%" style="stop-color:#0f0;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                            </linearGradient>
+                            
+                          </defs>
+                        <ellipse cx="300" cy="200" rx="200" ry="120" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="80" font-family="Verdana" x="140" y="220">shankar</text>
+                        <!-- <text fill="#ffffff" font-size="80" font-family="Verdana" x="190" y="100"transform="rotate(30 20,40)">shankar</text>   -->
+                        Sorry, your browser does not support inline SVG.
+
+                        </svg>
+                        
+            </div>
+            <div class="svgArea">
+                    <svg height="100" width="500">
+                            <ellipse cx="240" cy="50" rx="220" ry="30" style="fill:yellow" />
+                            <ellipse cx="220" cy="50" rx="190" ry="20" style="fill:white" />
+                          </svg>
+            </div>
+            
+                    <svg width="600" height="400" svgArea>
+                    <defs>
+                            <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                              <stop offset="0%" style="stop-color:rgb(255,255,255);
+                              
+                              stop-opacity:0" />
+                              <stop offset="50%" style="stop-color:#1ff;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+                            </radialGradient>
+                          </defs>
+                          <ellipse cx="300" cy="200" rx="300" ry="100" fill="url(#grad2)" />
+            </svg>
+     </div>
+
+
+
+     <div class="svgArea googlelogo">
+        <svg width="600" height="400">
+               
+    <defs>
+                <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                  <stop offset="25%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                  <stop offset="75%" style="stop-color:#0f0;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#00f;stop-opacity:1" />
+                  
+                </linearGradient>
+                
+              </defs>
+            <!-- <ellipse cx="300" cy="200" rx="200" ry="120" fill="url(#grad1)" /> -->
+            <text fill="url(#grad)" font-size="300" font-family="Verdana" x="140" y="220" >G</text>
+            <!-- <text fill="#ffffff" font-size="80" font-family="Verdana" x="190" y="100"transform="rotate(30 20,40)">shankar</text>   -->
+            Sorry, your browser does not support inline SVG.
+
+            </svg>
+            
+</div>
+
+
+
+
+
+
+    </div>
+ </div>   
+</body>
+</html>
