@@ -1,0 +1,32 @@
+.pageWrapper{
+    height:800px;
+    width:80%;
+    background-color: aqua;
+    padding:1px;
+
+}
+.box{
+    padding:1px;
+    height:100px;
+    width:100px;
+    background-color:red;
+    float:left;
+}
+#b1{
+    padding:10px;
+    float:left;
+}
+.msg{
+    height:100px;
+    width:100px;
+    background-color: burlywood;
+    margin:auto;
+    margin-top:center;
+}
+.togglebox{
+    height:400px;
+    width:400px;
+    background-color: crimson;
+    margin:auto;
+    margin-top:200px;
+}

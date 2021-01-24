@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="pg1.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    
+    
+    
+    
+
+<script>
+    var count=0;
+    $(document).ready(function(){
+        
+        $("#b1").click(function(index){
+        $(".pageWrapper").append("<div class='box' col-lg-3 >"+(++count)+ "</div>");
+        $(".msg").toggle(1000);
+        $(".msg").html("you have created<span class='text-info'>" +(count)+ "boxes</span>");
+        // $(".box").toggle(1000);
+        
+            $(".box").each(function(index){
+                if(index%2==0){
+                $(this).css("background-color", "#ff"+index+"");
+                }else{
+                    $(this).css("background-color", "#f0"+index+"");
+                }
+                
+                // if(index>16){
+                //     $(this).css("background-color", "#00"+index+"");
+                // }
+                // else if((index>16) && (index<32)){
+                // $(this).css("background-color", "#f0"+index+"");
+                // }
+            }); 
+           
+    });
+    $("#b2").click(function(){
+                $(".togglebox").toggle(2000);
+                // $(".togglebox").fadeToggle(3000);
+            });
+    
+    
+    
+    
+    });
+    </script>
+</head>
+<body>
+ <div class="pageWrapper col-lg-10 col-lg-offset-1">
+     <div id="b1" class="btn btn-primary">click me</div>
+     <div class="msg col-lg-12 text-success"  >
+         your mesage
+     </div>
+     
+     <div class="box1"></div>
+     <div id="b2" class="btn btn-success">toggle</div>
+     <div class="togglebox">toggle box</div>
+ </div>   
+</body>
+</html>
