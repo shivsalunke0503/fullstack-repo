@@ -1,0 +1,25 @@
+.sidebar{
+    height:475px;
+    background-color:#333;
+    transition:5s;
+}
+.leftmenu{
+    margin-top:10px;
+    transition:0.2s;
+    border-top:1px solid #fff;
+}
+.leftmenu li{
+/* background-color:#ff0; */
+/* border:1px solid #000; */
+padding:10px;
+padding-left:5px;
+margin-bottom:5px;
+text-align:left;
+border-bottom:1px solid #fff;
+}
+.leftmenu li:hover{
+text-align:center;
+/* padding-left:30px; */
+background-color:#000;
+font-weight:bold;
+}
