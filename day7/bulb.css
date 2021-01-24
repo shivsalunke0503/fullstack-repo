@@ -1,0 +1,36 @@
+.pagewrapper{
+    /* background-color:#ff0; */
+    padding:100px;
+}
+.button{
+height:200px;
+width:200px;    
+/* background-color:#f00; */
+/* margin:auto; */
+/* background-image:url("images/offbutton.png"); */
+/* background-size:100% 100%; */
+/* background-repeat: no-repeat; */
+border-radius: 50px;
+}
+.bulb{
+    height:400px;
+    width:400px;
+    background-color:#000;
+    padding:150px;
+    /* background-image:url("images/onblb.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size:100% 100%; */
+    margin:auto;
+}
+
+.bulb img{
+    height:400px;
+    width:400px;
+    margin:auto;
+}
+.fan{
+    height:300px;
+    width:300px;
+    background-color: blue;
+    margin-top:-700px;
+}

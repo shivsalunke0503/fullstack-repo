@@ -1,0 +1,62 @@
+body{
+    background-color:#ff0;
+}
+.pagewrapper{
+    margin:auto;
+    height:1000px;
+    width:80%;
+    background-color:#fff;
+    padding:10px;
+}
+.lefttriangle{
+    margin:auto;
+    height:0px;
+    width:0px;
+    /* background-color:#000; */
+    margin-top:10px;
+    /* position: absolute; */
+    border-top:100px solid transparent;
+    border-bottom:100px solid transparent;
+    border-left:100px solid #f0f;
+    border-right:100px solid transparent;
+   float:left; 
+}
+.righttriangle{
+    margin:auto;
+    height:0px;
+    width:0px;
+    /* background-color:#000; */
+    margin-top:10px;
+    /* position: absolute; */
+    border-top:100px solid transparent;
+    border-bottom:100px solid transparent;
+    border-left:100px solid transparent;
+    border-right:100px solid #ff4;
+    float:left;
+}
+.toptriangle{
+    margin:auto;
+    height:0px;
+    width:0px;
+    /* background-color:#000; */
+    margin-top:10px;
+    /* position: absolute; */
+    border-top:100px solid  #f00;
+    border-bottom:100px solid transparent;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    float:left;
+}
+.bottomtriangle{
+    margin:auto;
+    height:0px;
+    width:0px;
+    /* background-color:#000; */
+    margin-top:10px;
+    /* position: absolute; */
+    border-top:100px solid transparent;
+    border-bottom:100px solid  #0f0;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    float:left;
+}
