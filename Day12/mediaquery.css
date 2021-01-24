@@ -1,0 +1,42 @@
+@media only screen and (max-width: 767px)  {
+	.contactInHeader{
+		padding-left: 25px;
+		font-size: 12px;	
+		padding-top: 0px;		
+		background-color: #FFFFFF !important;
+		color:#0095eb	
+	}
+	.contactNsocial{
+		background-color: #FFFFFF !important;
+	}
+
+	#anyq{
+		display:none;
+	}
+	#socialheader{
+	text-align: center;
+    padding: 5px 0 0;
+    margin-bottom: 5px;
+	}
+	.dividerline{
+		display:block;
+	}
+	.fa-phone,.fa-envelope{
+		color:#000;
+	}
+	
+}
+
+@media only screen and (min-width:768px)  {
+	.contactInHeader{
+		padding-left: 24px;
+		font-size: 12px;		
+		padding-top: 1px;			
+		/* background-color: #FFFFFF !important; */
+	}	
+	.socialInHeader{
+		padding-right: 14px;
+		
+	}	
+}
+
