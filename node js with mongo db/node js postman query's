@@ -1,0 +1,40 @@
+Postman queries for node js
+1. Update query postman
+http://localhost:3003/api/carcategory/post
+
+raw data>>>>json
+
+{
+"action":"update",
+"newname":"new_name",
+"carCategory":"shankar"
+}
+
+2. insert:
+http://localhost:3003/api/carcategory/post
+raw data>>>>json
+
+{
+"action":"Insert",
+"newname":"new_name",
+"carCategory":"shankar"
+}
+
+3. delete
+http://localhost:3003/api/carcategory/delete
+raw>>>>json 
+
+
+{
+"id":"5e3fb7a13be21ac3c8629aea"
+}
+
+
+4. get list:
+http://localhost:3003/api/carcategory/get/list
+
+5. get atoz
+
+
+6. get one record using id
+http://localhost:3003/api/carcategory/get/one/5e3fb7cc3be21ac3c8629aeb
